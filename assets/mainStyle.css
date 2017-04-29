@@ -102,6 +102,7 @@ footer {
 	width: calc(33.333% - 10px);
 	margin: var(--normal);
 	background-color: var(--white);
+	height: 600px;
 }
 .like-counter {
 	background-color: var(--white);
@@ -112,4 +113,7 @@ footer {
 	text-transform: uppercase;
 	font-weight: 100;
 	color: var(--extra-dark-gray)
+}
+.card-img {
+	width: 100%
 }
