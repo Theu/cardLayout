@@ -1,0 +1,119 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*end reset*/
+/*=======================
+NORMALIZER
+=======================*/
+:root {
+	/*colors*/
+	--white: #ffffff;
+
+	--soft-gray: #f6f6f6;
+	--basic-gray: #c4c4c4;
+	--extra-dark-gray: #181818;
+
+	/*spaces ATM used only for padding and margin*/
+	--normal: 5px;
+}
+*,
+*:before,
+*:after {
+		box-sizing: border-box;
+   -moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+.internal-padding {
+	padding: var(--normal);
+}
+/*=======================
+LAYOUT
+=======================*/
+body {
+	font-size: 16px;
+	font-weight: lighter;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	color: var(--extra-dark-gray)
+}
+header,
+footer {
+	height: 100px;
+}
+header {
+	border-bottom: 5px double var(--soft-gray);
+}
+footer {
+	border-top: 5px double var(--soft-gray);
+}
+.main {
+	width: 1080px;
+	margin: 0 auto;
+	background-color: var(--soft-gray);
+	vertical-align: top;
+}
+.card {
+	display: inline-block;
+	width: calc(33.333% - 10px);
+	margin: var(--normal);
+	background-color: var(--white);
+	height: 600px;
+}
+.like-counter {
+	background-color: var(--white);
+	border: 1px solid var(--basic-gray); 
+	border-radius: 5px;
+	font-size: 18px;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: 100;
+	color: var(--extra-dark-gray)
+}
+.card-img {
+	width: 100%
+}

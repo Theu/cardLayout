@@ -1,0 +1,8 @@
+header
+ - main
+  -- card
+    .-card-img
+    .-like-counter (button)
+    .-comment-wrapper
+     .-.comment
+footer
