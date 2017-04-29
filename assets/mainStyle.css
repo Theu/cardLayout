@@ -48,5 +48,68 @@ table {
 }
 
 /*end reset*/
+/*=======================
+NORMALIZER
+=======================*/
+:root {
+	/*colors*/
+	--white: #ffffff;
 
-/*=======================*/
+	--soft-gray: #f6f6f6;
+	--basic-gray: #c4c4c4;
+	--extra-dark-gray: #181818;
+
+	/*spaces ATM used only for padding and margin*/
+	--normal: 5px;
+}
+*,
+*:before,
+*:after {
+		box-sizing: border-box;
+   -moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+.internal-padding {
+	padding: var(--normal);
+}
+/*=======================
+LAYOUT
+=======================*/
+body {
+	font-size: 16px;
+	font-weight: lighter;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	color: var(--extra-dark-gray)
+}
+header,
+footer {
+	height: 100px;
+}
+header {
+	border-bottom: 5px double var(--soft-gray);
+}
+footer {
+	border-top: 5px double var(--soft-gray);
+}
+.main {
+	width: 1080px;
+	margin: 0 auto;
+	background-color: var(--soft-gray);
+	vertical-align: top;
+}
+.card {
+	display: inline-block;
+	width: calc(33.333% - 10px);
+	margin: var(--normal);
+	background-color: var(--white);
+}
+.like-counter {
+	background-color: var(--white);
+	border: 1px solid var(--basic-gray); 
+	border-radius: 5px;
+	font-size: 18px;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: 100;
+	color: var(--extra-dark-gray)
+}
