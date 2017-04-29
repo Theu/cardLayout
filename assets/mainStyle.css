@@ -95,12 +95,11 @@ footer {
 	width: 1080px;
 	margin: 0 auto;
 	background-color: var(--soft-gray);
-	vertical-align: top;
-			display: flex;
-  	 display: -ms-flexbox;
-	display: -webkit-flex;   
+		  display: flex;
+   display: -ms-flexbox;
+  display: -webkit-flex;   
 	flex-direction: row;
-	flex-wrap: wrap;
+		flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 }
 .card {
@@ -108,17 +107,40 @@ footer {
 	margin: var(--normal);
 	background-color: var(--white);
 	height: 600px;
+	display: -ms-flexbox;
+		   display: flex;
+  flex-direction: column;
+   -ms-flex-wrap: column;
+}
+.card-img {
+	width: 100%;
+	min-height: 225px; /* thank you IE*/
+}
+.interaction-container {
+	position: relative;
+	height: auto;
+	flex-grow: 1;
+}
+.interaction {
+	max-height: 150px;
+	position: absolute;
+	margin: auto;
+	top: 0; left: 0; bottom: 0; right: 0;
+	
 }
 .like-counter {
+	margin-top: 10px;
 	background-color: var(--white);
 	border: 1px solid var(--basic-gray); 
 	border-radius: 5px;
 	font-size: 18px;
 	line-height: 18px;
-	text-transform: uppercase;
 	font-weight: 100;
-	color: var(--extra-dark-gray)
+	color: var(--extra-dark-gray);
+	text-transform: uppercase;
 }
-.card-img {
-	width: 100%
+.comment-wrapper {
+	margin-top: 10px;
+	max-height: 70%;
+	overflow: scroll;
 }
