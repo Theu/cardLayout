@@ -107,8 +107,10 @@ footer {
 	margin: var(--normal);
 	background-color: var(--white);
 	height: 600px;
-	display: flex;
-	flex-direction: column;
+	display: -ms-flexbox;
+		   display: flex;
+  flex-direction: column;
+   -ms-flex-wrap: column;
 }
 .card-img {
 	width: 100%;
