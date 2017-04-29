@@ -114,6 +114,7 @@ footer {
 }
 .card-img {
 	width: 100%;
+	min-height: 225px; /* thank you IE*/
 }
 .interaction-container {
 	position: relative;
